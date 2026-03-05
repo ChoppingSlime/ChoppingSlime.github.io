@@ -68,7 +68,7 @@
 			margin: 0 auto;
 			padding: 4rem 5%;
 		}
-		.hero {
+		.hero, .game-card {
 			background: linear-gradient(135deg, var(--glass), transparent);
 			border: 1px solid var(--glass);
 			border-radius: 24px;
@@ -80,12 +80,6 @@
 			animation: fadeIn 1s ease-out;
 		}
 		.game-card {
-			display: flex;
-			align-items: center;
-			gap: 4rem;
-			margin-bottom: 8rem;
-			padding: 2rem;
-			border-radius: 24px;
 			transition: transform 0.4s ease;
 		}
 		.game-card:hover {
@@ -151,6 +145,7 @@
 			opacity: 0.6;
 			display: block;
 			margin-top: 8px;
+			text-align: center;
 		}
 		footer {
 			background: rgba(0,0,0,0.2);
@@ -186,7 +181,7 @@
 			to { opacity: 1; transform: translateY(0); }
 		}
 		@media (max-width: 768px) {
-			.hero, .game-card, .game-card.reverse {
+			.hero, .game-card {
 				flex-direction: column !important;
 				text-align: center;
 				padding: 2rem 1rem;
@@ -198,7 +193,6 @@
 	</style>
 </head>
 <body>
-
 	<header>
 		<div class="logo-area">
 			<img src="logo.png" alt="Logo">
@@ -206,7 +200,6 @@
 		</div>
 		<nav><a href="#">Portfolio</a></nav>
 	</header>
-
 	<main class="container">
 		<section class="hero">
 			<div class="content-box">
@@ -221,8 +214,7 @@
 				<img src="BreakingNews.png" alt="News Duck">
 			</div>
 		</section>
-
-		<section class="game-card">
+		<section class="game-card reverse">
 			<div class="image-box">
 				<img src="gnome.png" alt="Beaver King">
 			</div>
@@ -239,7 +231,6 @@
 			</div>
 		</section>
 	</main>
-
 	<footer>
 		<div class="social-links">
 			<a href="#">X / Twitter</a>
@@ -251,6 +242,5 @@
 			© 2026 CHOPPING SLIME STUDIO
 		</p>
 	</footer>
-
 </body>
 </html>
